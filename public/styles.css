@@ -24,6 +24,8 @@
     font-weight: 200;
   }
   
+ 
+  
   footer {
     position: absolute;
     text-align: center;
@@ -44,6 +46,7 @@
     margin: 16px;
     float: left;
   }
+  
   .note h1 {
     font-size: 1.1em;
     margin-bottom: 6px;
@@ -69,7 +72,7 @@
   
   form {
     position: relative;
-    width: 70%;
+    width: 480px;
     margin: 30px auto 20px auto;
     background: #fff;
     padding: 15px;
@@ -101,3 +104,60 @@
     outline: none;
   }
   
+
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+ header{
+    width:110%;
+ }
+  h1{
+      width:100%;
+      text-align: center;
+      font-weight:500;
+      font-size: 80px;
+
+    }
+    form{
+      width:70%;
+    }
+    form input,form textarea{
+      width:100%;
+      font-size: 45px;
+    }
+    form button{
+      width:100px;
+      height: 100px;
+      bottom:-50px;
+      font-size: 30px;
+    }
+    .note{
+      position: relative;   
+      background: #fff;
+      width:100%;
+      padding: 15px;
+      border-radius: 7px;
+      box-shadow: 0 1px 5px rgb(138, 137, 137);
+     
+    }
+    .note h1{
+      font-size: 50px;
+      margin-bottom: 6px;
+    }
+    .note p{
+      font-size:40px;
+      margin-bottom: 10px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+    .note button{
+      position: relative;
+      float: right;
+      margin-right: 10px;
+      color: #f5ba13;
+      border: none;
+      width: 200px;
+      height: 60px;
+      cursor: pointer;
+      outline: none;
+      font-size:40px;
+    }
+  }
